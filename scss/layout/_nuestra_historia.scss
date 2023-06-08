@@ -1,0 +1,30 @@
+.historia {
+    margin: 20px;
+    font-size: 20px;
+
+    p {
+        margin: 10px;
+    }
+    .carousel__box {
+        @include flex(row,space-evenly,center,20px);
+        flex-wrap: wrap;
+    
+        img {
+            width: 350px;
+            height: 320px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px 1px $main-color;
+        }
+    
+        .carousel-1 {
+            width: 350px;
+            height: 320px;
+            box-shadow: 5px 5px 10px 1px $main-color;
+            border-radius: 10px;
+    
+            .carousel-inner {
+                border-radius: 10px;
+            }
+        }
+    }
+}

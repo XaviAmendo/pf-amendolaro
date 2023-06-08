@@ -1,0 +1,26 @@
+footer {
+    background-color: #cdf195;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+    border-top: 2px solid $third-color;
+    color: $third-color;
+
+    h3 {
+        position: absolute;
+        padding: 15px;
+        font-size: 1rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .footers {
+        text-decoration: none;
+        text-align: right;
+
+        .bi-facebook,
+        .bi-twitter,
+        .bi-instagram {
+            color: $third-color;
+            margin: 0px 10px 0px;
+        }
+    }
+}

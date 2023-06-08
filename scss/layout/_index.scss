@@ -1,0 +1,76 @@
+.index {
+    background-color: whitesmoke;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    text-align: center;
+
+    img {
+        display: inline-block;
+        width: 450px;
+        height: 450px;
+        border-radius: 5px;
+        margin: 10px;
+        vertical-align: initial;
+        box-shadow: 5px 5px 10px 1px $main-color;
+    }
+
+    &__body {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            'titulo titulo img'
+            'descrip descrip img'
+            'descrip descrip img';
+
+        img {
+            grid-area: img;
+        }
+
+        h3 {
+            grid-area: titulo;
+            text-align: left;
+            margin: 10px 0px 25px 5px;
+        }
+
+        p {
+            grid-area: descrip;
+            text-align: left;
+        }
+    }
+}
+
+.bg {
+    background-image: url(../img/index4.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 1px $main-color;
+}
+
+.index__img {
+    @include flex(row,center,center,15px);
+    margin: 20px 0px 20px 0px;
+    flex-wrap: wrap;
+
+    img {
+        width: 350px;
+        height: 320px;
+        border-radius: 5px;
+        object-fit: cover;
+        box-shadow: 5px 5px 10px 1px $main-color;
+    }
+
+    iframe { 
+        width: 350px;
+        height: 320px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px 1px $main-color;
+    }
+}
