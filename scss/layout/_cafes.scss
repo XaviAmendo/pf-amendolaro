@@ -19,6 +19,10 @@
             width: 150px;
             object-fit: cover;
             border-radius: 10px;
+            &:hover{
+                transition: 1s;
+                transform: rotate(-10deg);
+            }
         }
     }
     &__texto {
@@ -26,7 +30,7 @@
         h2 {
             font-size: 25px;
             margin: 0px 20px 10px 10px;
-            font-family: "Roboto";
+            font-family: $font;
             text-align: left;
         }
         p {

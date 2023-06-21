@@ -10,14 +10,18 @@
         margin: 20px;
         border: solid 2px $third-color;
         border-radius: 10px;
+        box-shadow: 5px 5px 10px 1px $main-color;
 
         button {
             border-color: $third-color;
             padding: 0px 3px 0px 3px;
             border-radius: 10px;
+            background-color: $third-color;
+            color: $four-color;
+            box-shadow: 5px 5px 10px 1px $main-color;
             &:hover {
-                border-color: rgb(205, 241, 149);
-                color: $third-color;
+                color: $main-color;
+                background-color: $four-color;
             }
         }
     }
@@ -27,6 +31,7 @@
         height: 100%;
         margin: 20px;
         border-radius: 10px;
+        box-shadow: 5px 5px 10px 1px $main-color;
 
         legend {
             padding: 10px;
@@ -52,6 +57,7 @@
     iframe {
         border-radius: 20px;
         border: solid 2px $third-color;
+        box-shadow: 5px 5px 10px 1px $main-color;
     }
 }
 

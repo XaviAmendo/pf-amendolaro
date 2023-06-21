@@ -21,6 +21,10 @@ footer {
         .bi-instagram {
             color: $third-color;
             margin: 0px 10px 0px;
+            &:hover{
+                color: rgb(223, 239, 239);
+            }
+            
         }
     }
 }

@@ -4,8 +4,8 @@
     padding: 0px;
 
     img {
-        width: 87px;
-        height: 87px;
+        width: 75px;
+        height: 75px;
     }
 
     .collapse {
@@ -14,24 +14,26 @@
 }
 
 nav ul li {
+    background-color: $third-color;
     border: 2px solid $third-color;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 20px;
     font-weight: bold;
     font-size: 18px;
+    box-shadow: 5px 5px 10px 1px $third-color;
 
     .nav-link {
-        color: $third-color;
+        color: /*$third-color*/ rgb(205, 241, 149);
         flex-direction: column-reverse;
 
         &:hover {
-            color: #cdf195;
+            color:/* #cdf195*/ rgb(148, 12, 10);
             transition: 1s;
         }
     }
 
     &:hover {
-        background-color: $third-color;
+        background-color: /*$third-color*/rgb(205, 241, 149);
         transition: 1s;
     }
 }
@@ -43,24 +45,25 @@ nav ul li {
 
     li {
         margin-top: 0px;
-        background-color: #cdf195;
+        /*background-color: #cdf195;*/
         padding: 5px;
         text-align: center;
     }
 
     .dropdown-item {
         display: inline;
-        color: $third-color;
+        color: rgb(205, 241, 149);
         font-weight: bold;
-        background-color: #cdf195;
+        /*background-color: #cdf195;*/
 
         &:hover {
-            background-color: $third-color;
+            background-color: /*$third-color*/rgb(205, 241, 149);
             transition: 1s;
+            border-radius: 20px;
         }
 
         &:hover {
-            color: #cdf195;
+            color: rgb(148, 12, 10);
             transition: 1s;
         }
     }

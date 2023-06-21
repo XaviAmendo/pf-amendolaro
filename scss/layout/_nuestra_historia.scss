@@ -5,23 +5,47 @@
     p {
         margin: 10px;
     }
+
     .carousel__box {
-        @include flex(row,space-evenly,center,20px);
+        @include flex(row, space-evenly, center, 20px);
         flex-wrap: wrap;
-    
-        img {
+
+        .hcards {
             width: 350px;
-            height: 320px;
-            border-radius: 5px;
+            height: 450px;
+            text-align: left;
+            margin: 10px;
+            background-color: $second-color;
+            border-radius: 10px;
             box-shadow: 5px 5px 10px 1px $main-color;
+
+            p{
+                text-align: center;
+                font-family: $font;
+                padding: 5px;
+                font-size: 17px;
+            }
+
+            img {
+                width: 350px;
+                height: 320px;
+                border-radius: 5px;
+                box-shadow: 5px 5px 10px 1px $main-color;
+            }
+            iframe {
+                width: 350px;
+                height: 320px;
+                border-radius: 5px;
+                box-shadow: 5px 5px 10px 1px $main-color;
+            }
         }
-    
+
         .carousel-1 {
-            width: 350px;
+           width: 350px;
             height: 320px;
             box-shadow: 5px 5px 10px 1px $main-color;
             border-radius: 10px;
-    
+
             .carousel-inner {
                 border-radius: 10px;
             }

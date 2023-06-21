@@ -8,8 +8,8 @@
   <!--favicon-->
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <!--seo meta tags-->
-  <meta name="description" content="historia del cafe">
-  <meta name="keywords" content="cafe, historia, barista">
+  <meta name="description" content="pagina inicial de lord cafe, breve historia del cafe e imagenes de los diferentes estadios del cafe">
+  <meta name="keywords" content="cafe, historia, barista, granos, molienda">
   <!--cdn animate.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!--link a bootstrap-->
@@ -25,7 +25,8 @@
     <!--navbar bootstrap-->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand animate__animated animate__slideInDown" href="./index.html"><img src="./img/logo_verde.png" alt="logo"></a>
+        <a class="navbar-brand animate__animated animate__slideInDown" href="./index.html"><img
+            src="./img/logo_verde.jpg" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -62,7 +63,7 @@
 
   <main>
     <h1>Lord Café</h1>
-    <h2>El club cafetero</h2>
+    <h2 class="slogan">El club cafetero</h2>
     <br>
     <section class="index">
       <div class="index__body">
@@ -88,14 +89,56 @@
     <section class="bg">
     </section>
 
-    <!--parte inferior con imagen y video-->
+    <!--parte inferior con carrusel-->
     <section class="index__img">
-      <img src="./img/index2.jpg" alt="Imagen de granos de cafe y cafe molido">
-      <iframe width="956" height="538" src="https://www.youtube.com/embed/EpLditg-kSQ"
-        title="Tutorial técnicas de Barista para preparar un buen café" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-      <img src="./img/index3.jpg" alt="granos de cafe, cafemolido y una taza con cafe">
+      <div class="icards">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/semillasarabicas.jpg" class="d-block w-100" alt="Bolsa de tela llena de granos de cafe tipo arabico">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/semillaslibericas.jpg" class="d-block w-100" alt="Taza negra llena de granos de cafe tipo liberico y de fondo planta de cafe">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/semillasrobusta.jpg" class="d-block w-100" alt="Taza blanca llena de granos de cafe rodeada de granos de cafe tipo robusta">
+            </div>
+          </div>
+        </div>
+        <p>Hay muchos tipos muy diferentes de cafe, lo importante es la calidad del grano</p>
+      </div>
+      <div class="icards">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/cafemolidofino.jpg" class="d-block w-100" alt="Cuchara llena de cafe molido fino">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/cafemolidomedio.jpg" class="d-block w-100" alt="Cuchara cafetera llena de cafe molido medio y de fondo granos de cafe">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/cafemolidogrueso.jpg" class="d-block w-100" alt="Cuchara medidora llena de cafe molido grueso">
+              </div>
+            </div>
+          </div>
+          <p>La molienda correcta para el tipo de filtro a utilizar es fundamental para poder aprovechar todos los beneficios del grano de cafe</p>
+      </div>
+      <div class="icards">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/cafecapuchino.jpg" class="d-block w-100" alt="Taza de vidrio trasnsparente llena de cafe capuchino, de fondo un cuenco blanco con mermelada y otro con queso crema">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/cafeconcanela.jpg" class="d-block w-100" alt="Taza blanca llena de cafe, ramitas de canela al lado y canela estrellada">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/cafenegro.jpg" class="d-block w-100" alt="Taza blanca llena de cafe negro, sobre tabla de madera y un libro abierto de fondo">
+            </div>
+          </div>
+        </div>
+        <p>Capuchino, con canela o negro... lo importante es que en tu dia haya un cafecito reparador</p>
+      </div>
     </section>
   </main>
 

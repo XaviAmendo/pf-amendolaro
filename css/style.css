@@ -56,30 +56,32 @@ p {
   padding: 0px;
 }
 .navbar img {
-  width: 87px;
-  height: 87px;
+  width: 75px;
+  height: 75px;
 }
 .navbar .collapse {
   flex-direction: row-reverse;
 }
 
 nav ul li {
+  background-color: rgb(148, 12, 10);
   border: 2px solid rgb(148, 12, 10);
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 20px;
   font-weight: bold;
   font-size: 18px;
+  box-shadow: 5px 5px 10px 1px rgb(148, 12, 10);
 }
 nav ul li .nav-link {
-  color: rgb(148, 12, 10);
+  color: rgb(205, 241, 149);
   flex-direction: column-reverse;
 }
 nav ul li .nav-link:hover {
-  color: #cdf195;
+  color: rgb(148, 12, 10);
   transition: 1s;
 }
 nav ul li:hover {
-  background-color: rgb(148, 12, 10);
+  background-color: rgb(205, 241, 149);
   transition: 1s;
 }
 
@@ -90,22 +92,23 @@ nav ul li:hover {
 }
 .dropdown-menu li {
   margin-top: 0px;
-  background-color: #cdf195;
+  /*background-color: #cdf195;*/
   padding: 5px;
   text-align: center;
 }
 .dropdown-menu .dropdown-item {
   display: inline;
-  color: rgb(148, 12, 10);
+  color: rgb(205, 241, 149);
   font-weight: bold;
-  background-color: #cdf195;
+  /*background-color: #cdf195;*/
 }
 .dropdown-menu .dropdown-item:hover {
-  background-color: rgb(148, 12, 10);
+  background-color: rgb(205, 241, 149);
   transition: 1s;
+  border-radius: 20px;
 }
 .dropdown-menu .dropdown-item:hover {
-  color: #cdf195;
+  color: rgb(148, 12, 10);
   transition: 1s;
 }
 
@@ -131,6 +134,16 @@ footer .footers .bi-twitter,
 footer .footers .bi-instagram {
   color: rgb(148, 12, 10);
   margin: 0px 10px 0px;
+}
+footer .footers .bi-facebook:hover,
+footer .footers .bi-twitter:hover,
+footer .footers .bi-instagram:hover {
+  color: rgb(223, 239, 239);
+}
+
+.slogan {
+  font-size: 16px;
+  margin-top: -25px;
 }
 
 .index {
@@ -190,14 +203,32 @@ footer .footers .bi-instagram {
   margin: 20px 0px 20px 0px;
   flex-wrap: wrap;
 }
-.index__img img {
+.index__img .icards {
+  width: 350px;
+  height: 450px;
+  text-align: left;
+  margin: 10px;
+  background-color: rgb(223, 239, 239);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
+}
+.index__img .icards .carousel-inner {
+  border-radius: 5px;
+}
+.index__img .icards p {
+  text-align: center;
+  font-family: roboto;
+  padding: 5px;
+  font-size: 17px;
+}
+.index__img .icards img {
   width: 350px;
   height: 320px;
   border-radius: 5px;
   object-fit: cover;
   box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
 }
-.index__img iframe {
+.index__img .icards iframe {
   width: 350px;
   height: 320px;
   border-radius: 5px;
@@ -219,7 +250,28 @@ footer .footers .bi-instagram {
   gap: 20px;
   flex-wrap: wrap;
 }
-.historia .carousel__box img {
+.historia .carousel__box .hcards {
+  width: 350px;
+  height: 450px;
+  text-align: left;
+  margin: 10px;
+  background-color: rgb(223, 239, 239);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
+}
+.historia .carousel__box .hcards p {
+  text-align: center;
+  font-family: roboto;
+  padding: 5px;
+  font-size: 17px;
+}
+.historia .carousel__box .hcards img {
+  width: 350px;
+  height: 320px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
+}
+.historia .carousel__box .hcards iframe {
   width: 350px;
   height: 320px;
   border-radius: 5px;
@@ -261,33 +313,64 @@ footer .footers .bi-instagram {
   object-fit: cover;
   border-radius: 10px;
 }
+.cards__body img:hover {
+  transition: 1s;
+  transform: rotate(-10deg);
+}
 .cards__texto {
   align-items: center;
 }
 .cards__texto h2 {
   font-size: 25px;
   margin: 0px 20px 10px 10px;
-  font-family: "Roboto";
+  font-family: roboto;
   text-align: left;
 }
 .cards__texto p {
   font-size: 17px;
 }
 
-.texto1 h2 {
+.texto1 ul {
+  border-top: solid 2px rgb(205, 241, 149);
+  border-left: solid 2px rgb(205, 241, 149);
+  padding: 10px 0px 10px 50px;
+  border-radius: 20px;
+  border-bottom: solid 2px rgb(205, 241, 149);
+  margin: 15px 15px 15px 10px;
+}
+.texto1 .recetas {
   font-size: 25px;
   margin: 0px 20px 10px 10px;
+  padding: 5px 0px 5px 20px;
   font-family: "roboto";
   text-align: left;
+  border-bottom: solid 2px rgb(148, 12, 10);
+  border-left: solid 2px rgb(148, 12, 10);
+  width: 40%;
+  border-radius: 0px 0px 5px 10px;
 }
 
-.texto1 h2 {
-  font-size: 25px;
-  margin: 0px 20px 10px 10px;
-  font-family: "roboto";
-  text-align: left;
-}
-
+/*.texto1 {
+    ul {
+        border-top: solid 2px rgb(148, 12, 10);
+        border-left: solid 2px rgb(148, 12, 10);
+        padding: 10px 0px 10px 50px;
+        border-radius: 20px;
+        border-bottom: solid 2px rgb(148, 12, 10);
+        margin: 15px 15px 15px 10px;
+    }
+    .recetas {
+        font-size: 25px;
+        margin: 0px 20px 10px 10px;
+        padding: 5px 0px 5px 20px;
+        font-family: "roboto";
+        text-align: left;
+        border-bottom: solid 2px red;
+        border-left: solid 2px red;
+        width: 40%;
+        border-radius: 0px 0px 5px 10px;
+    }
+}*/
 .contac {
   width: 100%;
   display: flex;
@@ -300,21 +383,26 @@ footer .footers .bi-instagram {
   margin: 20px;
   border: solid 2px rgb(148, 12, 10);
   border-radius: 10px;
+  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
 }
 .contac fieldset button {
   border-color: rgb(148, 12, 10);
   padding: 0px 3px 0px 3px;
   border-radius: 10px;
+  background-color: rgb(148, 12, 10);
+  color: rgb(205, 241, 149);
+  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
 }
 .contac fieldset button:hover {
-  border-color: rgb(205, 241, 149);
-  color: rgb(148, 12, 10);
+  color: rgb(80, 9, 8);
+  background-color: rgb(205, 241, 149);
 }
 .contac .contatos {
   border: solid 2px rgb(148, 12, 10);
   height: 100%;
   margin: 20px;
   border-radius: 10px;
+  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
 }
 .contac .contatos legend {
   padding: 10px;
@@ -336,6 +424,7 @@ footer .footers .bi-instagram {
 .maps iframe {
   border-radius: 20px;
   border: solid 2px rgb(148, 12, 10);
+  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
 }
 
 @media only screen and (max-width: 750px) {
@@ -365,13 +454,17 @@ footer .footers .bi-instagram {
     width: 280px;
     height: 280px;
   }
-  .index__img img {
-    width: 330px;
-    height: 300px;
+  .index__img .icards {
+    width: 300px;
+    height: 425px;
   }
-  .index__img iframe {
-    width: 330px;
-    height: 300px;
+  .index__img .icards .carousel {
+    width: 300px;
+    height: 280px;
+  }
+  .index__img .icards .carousel img {
+    width: 300px;
+    height: 280px;
   }
   .cards__body {
     flex-direction: column;
@@ -401,11 +494,19 @@ footer .footers .bi-instagram {
     text-align: center;
     font-size: 18px;
   }
-  .historia .carousel__box img {
+  .historia .carousel__box .hcards {
+    width: 300px;
+    height: 380px;
+  }
+  .historia .carousel__box .hcards iframe {
     width: 300px;
     height: 280px;
   }
-  .historia .carousel__box .carousel-1 {
+  .historia .carousel__box .hcards .carousel-1 {
+    width: 300px;
+    height: 280px;
+  }
+  .historia .carousel__box .hcards .carousel-1 img {
     width: 300px;
     height: 280px;
   }
@@ -427,13 +528,17 @@ footer .footers .bi-instagram {
   .index__body p {
     font-size: 18px;
   }
-  .index__img img {
-    width: 240px;
-    height: 220px;
+  .index__img .icards {
+    width: 260px;
+    height: 410px;
   }
-  .index__img iframe {
-    width: 240px;
-    height: 220px;
+  .index__img .icards .carousel {
+    width: 260px;
+    height: 240px;
+  }
+  .index__img .icards .carousel img {
+    width: 260px;
+    height: 240px;
   }
   h1 {
     font-size: 55px;
@@ -443,7 +548,11 @@ footer .footers .bi-instagram {
     font-size: 10px;
     position: inherit;
   }
-  .footers {
+  footer h4 {
+    position: initial;
+    text-align: center;
+  }
+  footer .footers {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -453,13 +562,21 @@ footer .footers .bi-instagram {
     text-align: center;
     font-size: 18px;
   }
-  .historia .carousel__box img {
-    width: 240px;
-    height: 220px;
+  .historia .carousel__box .hcards {
+    width: 260px;
+    height: 345px;
   }
-  .historia .carousel__box .carousel-1 {
-    width: 240px;
-    height: 220px;
+  .historia .carousel__box .hcards iframe {
+    width: 260px;
+    height: 240px;
+  }
+  .historia .carousel__box .hcards .carousel-1 {
+    width: 260px;
+    height: 240px;
+  }
+  .historia .carousel__box .hcards .carousel-1 img {
+    width: 260px;
+    height: 240px;
   }
   .contac fieldset {
     font-size: 15px;

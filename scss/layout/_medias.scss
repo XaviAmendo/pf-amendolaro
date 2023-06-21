@@ -30,14 +30,21 @@
         height: 280px;
     }
 
-    .index__img img {
-        width: 330px;
-        height: 300px;
-    }
+    .index__img {
+        .icards {
+            width: 300px;
+            height: 425px;
 
-    .index__img iframe {
-        width: 330px;
-        height: 300px;
+            .carousel {
+                width: 300px;
+                height: 280px;
+
+                img {
+                    width: 300px;
+                    height: 280px;
+                }
+            }
+        }
     }
 
     .cards__body {
@@ -78,14 +85,24 @@
         }
 
         .carousel__box {
-            img {
+            .hcards {
                 width: 300px;
-                height: 280px;
-            }
+                height: 380px;
 
-            .carousel-1 {
-                width: 300px;
-                height: 280px;
+                iframe {
+                    width: 300px;
+                    height: 280px;
+                }
+
+                .carousel-1 {
+                    width: 300px;
+                    height: 280px;
+
+                    img {
+                        width: 300px;
+                        height: 280px;
+                    }
+                }
             }
         }
     }
@@ -112,14 +129,21 @@
         font-size: 18px;
     }
 
-    .index__img img {
-        width: 240px;
-        height: 220px;
-    }
+    .index__img {
+        .icards {
+            width: 260px;
+            height: 410px;
 
-    .index__img iframe {
-        width: 240px;
-        height: 220px;
+            .carousel {
+                width: 260px;
+                height: 240px;
+
+                img {
+                    width: 260px;
+                    height: 240px;
+                }
+            }
+        }
     }
 
     h1 {
@@ -132,11 +156,18 @@
         position: inherit;
     }
 
-    .footers {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+    footer {
+        h4 {
+            position: initial;
+            text-align: center;
+        }
+
+        .footers {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
     }
 
     .historia {
@@ -146,16 +177,27 @@
         }
 
         .carousel__box {
-            img {
-                width: 240px;
-                height: 220px;
-            }
+            .hcards {
+                width: 260px;
+                height: 345px;
 
-            .carousel-1 {
-                width: 240px;
-                height: 220px;
+                iframe {
+                    width: 260px;
+                    height: 240px;
+                }
+
+                .carousel-1 {
+                    width: 260px;
+                    height: 240px;
+
+                    img {
+                        width: 260px;
+                        height: 240px;
+                    }
+                }
             }
         }
+
     }
 
     .contac fieldset {
